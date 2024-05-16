@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <button id="toggle-mode" class="toggle-button"><i class="fas fa-eye"></i></button>
+        <div class="profile">
+            <img src="IMG_20231203_0947367210.jpg" alt="Profile Picture" class="profile-pic">
+            <h1><u>Shrikant Sahu</u></h1>
+            <h3>Welcome</h3>
+        </div>
+        <div class="content">
+            <div class="links">
+                <a href="https://t.me/Biittu_ji" target="_blank" class="button telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                <a href="https://www.linkedin.com/in/shrikant-sahu-bittu-ji/" target="_blank" class="button linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Bittu55" target="_blank" class="button github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/bittu___ji/" target="_blank" class="button instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('toggle-mode').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            const icon = this.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    </script>
+</body>
+</html>
